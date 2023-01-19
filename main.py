@@ -27,9 +27,9 @@ def parentheses():
     count = 0
     for i in symbols:
         list_.push(i)
-    while list_.isEmpty() is not True:
+    while list_.isEmpty() is False:
         count += 1
-        if count == list_.size() and list_.isEmpty() is not True:
+        if count == list_.size() and list_.isEmpty() is False:
             print('Несбалансированная последовательность - непарное количество скобок')
             break        
         if list_.size() % 2 == 0:
@@ -47,7 +47,7 @@ def parentheses():
         else:            
             print('Несбалансированная последовательность - нечетное число скобок')
             break
-    if list_.isEmpty() is not False:
+    if list_.isEmpty() is True:
         print('Сбалансированная последовательность')
     
  
